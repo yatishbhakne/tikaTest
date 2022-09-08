@@ -21,6 +21,9 @@ val logback = {
 lazy val app = (project in file("app"))
   .settings(
     assembly / assemblyJarName := "tikaTest.jar",
-    tika ++ logback
+    tika ++ logback,
+    dockerBaseImage := "openjdk:8-jre-alpine",
+    Docker / packageName := "yatishbhakne/tika-test"
     // more settings here ...
-  )
+  ).enablePlugins(DockerPlugin)
+    .enablePlugins(AshScriptPlugin)
