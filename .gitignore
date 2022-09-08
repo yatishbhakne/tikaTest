@@ -42,3 +42,4 @@ worker*.log
 /bin
 .bsp
 .idea
+images
