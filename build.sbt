@@ -2,8 +2,7 @@ ThisBuild / scalaVersion := "2.13.8"
 
 val tika = Seq(
   libraryDependencies ++= Seq(
-    "org.apache.tika" % "tika-core" % "2.4.1",
-    "org.apache.tika" % "tika-parsers" % "2.4.1" pomOnly()
+    "org.apache.tika" % "tika-core" % "2.4.1"
   )
 )
 
